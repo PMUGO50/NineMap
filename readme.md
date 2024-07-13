@@ -1,50 +1,14 @@
 # NineMap
 
-yyq26314@outlook.com
+## 安装依赖
 
-[TOC]
+```
+pip install -r requirements.txt
+```
 
-## 文件说明
+配置输入文件并运行程序后，输出为 result.png
 
-### 调用的库
-
-1. pandas 2.0.3
-
-2. matplotlib 3.7.2
-
-3. 自然还有这两个库运行所要依赖的其它必要的库
-
-### 提供输入信息的文件
-
-这部分文件可以更改以便向九宫格图中添加不同的内容
-
-- input.csv 是要输入的文字，编码为 ansi
-
-- info.csv 是定义图像长宽、图中字号大小等的文件，编码为 ansi
-
-- picture 文件夹存放着要放进九宫格中的图片
-
-### 输出结果
-
-- result.jpg 即为输出的结果
-
-### 程序文件
-
-这部分文件尽量不要更改以免程序发生意外错误
-
-- 9Map.exe 为启动程序
-
-- main.py 为主程序入口
-
-- Classdef.py 为定义读取表格和画图的类的模块
-
-- backuppic.jpg 是读取 picture 中的图片有误时自动替换的纯白图像
-
-- dist.png 是表明图像分区编号的文件
-
-- label.png 是exe图标图像
-
-## 输入格式约定
+## 输入约定
 
 ### input.csv
 
@@ -85,8 +49,4 @@ yyq26314@outlook.com
 ### picture
 
 在将图片放入 picture 中时，请将图片的文件名都改为 a_ij.jpg 的形式，其中 i 是指第 i 行，j 是指第 j 列，a_ij.jpg 分别对应 input.csv 中“内容ij”的位置
-
-## 启动程序
-
-设置好输入的内容后，click '9Map.exe' and have fun! 图片会自动保存为 result.jpg 
 
